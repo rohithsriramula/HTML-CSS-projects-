@@ -1,0 +1,55 @@
+<DOCTYPE html/>
+ <html lan="en">
+   <head>
+     <meta charset="UTf-8">
+     <title>Build a survey form</title>
+     <link rel="stylesheet" href="styles.css">
+     </head>
+     <body>
+       <h1 id="title">COVID Vaccination Survey Form</h1>
+       <p id="description">Please provide a correct information about your health</p>
+       <form id="survey-form">
+         <fieldset>
+         <label id="name-label">Name:<input id="name" type="text" required placeholder="Enter your name"></label>
+         <label id="email-label">Email:
+         <input id="email" type="email" required placeholder="enter your email">
+         </label>
+         <label id="number-label">Age:
+         <input id="number" type="number"
+         min="18" max="60" placeholder="Age">
+         </label>
+          <label id="phone-label">Ph-no:
+         <input id="email" type="email" required placeholder="enter your ph-no">
+         </label>
+         </fieldset>
+         <fieldset>
+         <label id="health-issues">Is there any health issues since last one year:
+         <select id="dropdown">
+           <option value="">(select one)</option>
+           <option value="1">Heart Problem</option>
+           <option value="2">Diabetes </option>
+           <option value="3">Blood pressure</option>
+           <option value="4">Aids</option>
+           </select>
+           </label>
+           <label>Is there any covid positive cases in your family:
+             <input id="yes" type="radio" value="yes" name="yes-no">
+             Yes</label>
+             <label>
+               <input id="no" type="radio" value="no" name="yes-no">No</label>
+               <label>Are you ready to vaccinate the Covieshield vaccine 💉:<input id="yes1" value="yes1" name="yes1-no1" type="checkbox">Yes</label>
+               <label>
+               <input id="no1" type="checkbox" value="no1" name="yes1-no1">No</label>
+           </fieldset>
+           <fieldset>
+             <label>Provide your Address:
+               <textarea id="address" name="address"
+               rows="3" cols="30" placeholder="present complete Address">
+                 </textarea>
+             </fieldset>
+             <input id="submit"
+             value="submit" type="submit">
+         </form>
+
+       </body>
+       </html>
